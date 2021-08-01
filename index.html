@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="styles.css">
+   <script src="app.js" defer></script>
+   <title>Ping Pong Scorekeeper</title>
+</head>
+
+<body>
+   <!-- * main section-->
+   <section class="section">
+      <div class="columns is-centered">
+         <div class="column is-5">
+            <div class="card">
+               <div class="card-header">
+                  <h1 class="card-header-title is-centered is-size-3">Ping Pong Scorekeeper</h1>
+               </div>
+               <div class="card-image">
+                  <figure class="image ">
+                     <img class=""
+                        src="https://images.unsplash.com/photo-1519162952575-c6c7199502a3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80">
+                  </figure>
+               </div>
+               <div class="card-content px-0 pb-1">
+                  <div class="columns is-gapless has-text-centered is-size-1">
+                     <div class="column">
+                        <p id="p1-score" class="mb-3">0</p>
+                        <button id="p1-btn" class="button is-success">Player One</button>
+                     </div>
+                     <div class="column">
+                        <p id="p2-score" class="mb-3">0</p>
+                        <button id="p2-btn" class="button is-link">Player Two</button>
+                     </div>
+                  </div>
+               </div>
+               <div class="card-footer">
+                  <a href="#" id="settings" class="card-footer-item has-text-black">Settings</a>
+                  <a href="#" id="reset-btn" class="card-footer-item has-text-danger">Reset</a>
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+   <!-- * modal section  -->
+   <div id="modal" class="modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+         <div class="card">
+            <div class="card-header">
+               <h1 class="px-5 py-3 is-size-5">Settings</h1>
+            </div>
+            <div class="card-content">
+               <p>Choose the winning score:</p>
+               <div class="field">
+                  <label for="" class="label">Winning Score</label>
+                  <div class="control">
+                     <div class="select">
+                        <select name="" id="setting-winning-score">
+                           <option value="1">1</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                           <option value="5">5</option>
+                           <option value="6">6</option>
+                           <option value="7">7</option>
+                        </select>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="modal-close"></div>
+   </div>
+   <!-- * message section  -->
+   <div id="winner-message" class="modal">
+      <div id="message-back" class="modal-background"></div>
+      <div class="modal-content">
+         <div class="message">
+            <div class="message-body">
+               You won! You can now spend an appropriate amount of time basking in the glory of your victory. When
+               you're ready to play again, you know what to do!
+            </div>
+         </div>
+      </div>
+      <div id="message-close" class="modal-close"></div>
+   </div>
+</body>
+
+
+
+</html
